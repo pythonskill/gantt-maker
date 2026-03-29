@@ -3,6 +3,6 @@ package com.pythonskill;
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 
 @QuarkusIntegrationTest
-class GanttResourceIT extends GanttResourceTest {
+class GreetingResourceIT extends GreetingResourceTest {
     // Execute the same tests but in packaged mode.
 }

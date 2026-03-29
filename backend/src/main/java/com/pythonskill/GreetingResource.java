@@ -5,8 +5,8 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-@Path("/gantt")
-public class GanttResource {
+@Path("/hello")
+public class GreetingResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
