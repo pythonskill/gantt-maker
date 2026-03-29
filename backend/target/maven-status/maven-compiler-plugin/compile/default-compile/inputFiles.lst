@@ -1,1 +1,3 @@
 /workspaces/gantt-maker/backend/src/main/java/com/pythonskill/GreetingResource.java
+/workspaces/gantt-maker/backend/src/main/java/com/pythonskill/entity/JiraLink.java
+/workspaces/gantt-maker/backend/src/main/java/com/pythonskill/entity/JiraTask.java
