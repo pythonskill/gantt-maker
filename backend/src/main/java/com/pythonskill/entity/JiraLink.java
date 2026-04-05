@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "jira_links")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 public class JiraLink extends PanacheEntityBase {
     
@@ -26,6 +25,9 @@ public class JiraLink extends PanacheEntityBase {
     public JiraTask target;
     
     public String type; // 'finish-to-start', 'start-to-start', etc.
+    
+    public JiraLink() {
+    }
     
     public JiraLink(JiraTask source, JiraTask target, String type) {
         this.source = source;
