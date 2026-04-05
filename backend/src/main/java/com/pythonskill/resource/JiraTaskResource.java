@@ -20,6 +20,7 @@ public class JiraTaskResource {
     JiraTaskService taskService;
     
     @GET
+    @Path("/")   
     public List<JiraTask> getAllTasks() {
         return taskService.getAllTasks();
     }

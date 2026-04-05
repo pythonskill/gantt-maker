@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "jira_tasks")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 public class JiraTask extends PanacheEntityBase {
     
@@ -47,6 +46,9 @@ public class JiraTask extends PanacheEntityBase {
     
     @Column(name = "updated_date")
     public LocalDateTime updatedDate;
+    
+    public JiraTask() {
+    }
     
     @OneToMany(mappedBy = "source", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     public List<JiraLink> outgoingLinks = new ArrayList<>();
